@@ -1,11 +1,11 @@
-import Greeting from './Greeting';
-import './App.css'; // Import CSS file
+import WelcomeMessage from './WelcomeMessage';
 
 function App() {
     return (
         <div className="App">
-            <Greeting name="Alice" message="Welcome to the lab!" />
-             <Greeting name="Bob" message="Good morning" />
+            <WelcomeMessage name="Alice" message="This is a welcome message">
+                <p>This is some additional JSX passed as children.</p>
+            </WelcomeMessage>
         </div>
     );
 }
